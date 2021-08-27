@@ -1,4 +1,4 @@
-# Discord-TTS-Bot-VOICEVOX
+# Discord-TTS-Bot-VoiceTextWebAPI
 Discord.jsで作成したDiscordの読み上げBOTです。
 <br>
 音声エンジンに[HOYA VoiceText Web API ](https://cloud.voicetext.jp/webapi)を使っています。
