@@ -1,4 +1,4 @@
-# Discord-TTS-Bot-VOICEVOX
+# Discord-TTS-Bot-VoiceTextWebAPI
 Discord.jsで作成したDiscordの読み上げBOTです。
 <br>
 音声エンジンに[HOYA VoiceText Web API ](https://cloud.voicetext.jp/webapi)を使っています。
@@ -60,7 +60,9 @@ node bot.js
 | !readon             | BOTの読み上げをONにします。  ※読み上げを再開したい時に利用                                    　　 |
 | !vtvoice            | BOTの声を変更します。[0～5]の範囲　                                                               |
 
+
 | 声リスト      | 声のタイプ          |
+|--------------|--------------------|
 | 0            | hikari(ひかりちゃん) |
 | 1            | haruka(はるかちゃん) |
 | 2            | takeru(たける)      |
