@@ -11,9 +11,6 @@
 require('dotenv').config();
 //音声合成(HOYA)ライブラリ
 const {VoiceText} = require('voice-text');
-
-//HTTP通信ライブラリ
-//const axios  = require("axios");
 //ファイル保存＆削除ライブラリ
 const fs = require("fs");
 //Discordライブラリ
@@ -57,18 +54,6 @@ var vcMode = false;
 const VoiceTable = ['hikari', 'haruka', 'takeru', 'santa', 'bear', 'show'];
 //ユーザーボイス変数
 var userVoice = {};
-
-//--------------------------------------------------------------
-//VOICEVOX用http通信オブジェクト
-//--------------------------------------------------------------
-//const rpc = axios.create({ baseURL: process.env.VOICEVOX_ENGINE, proxy: false });
-
-//--------------------------------------------------------------
-//VOICEVOX用ボイス変更テーブル
-//--------------------------------------------------------------
-//const VoiceTableVOICEVOX = ['0:四国めたん', '1:ずんだもん'];
-//ユーザーボイス変数
-//var userVoiceVOICEVOX = {};
 
 //--------------------------------------------------------------
 //音声変換キュー変数
