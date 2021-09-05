@@ -112,7 +112,7 @@ function addAudioToQueueVT(voiceFile, voiceChannel) {
   queueVT.push(
       {voiceFile: voiceFile, voiceChannel: voiceChannel }
   );
-  console.log("Add queue! queueIdx:" + (queueVT.length - 1)  + " Add voice_file:" + voiceFile);
+  console.log("Add queue --> voice_file:" + voiceFile);
 }
 
 //--------------------------------------------------------------
@@ -124,7 +124,7 @@ function playAudioVT() {
       queueVT[0].voiceChannel.join().then(connection => {
         const dispatcher = connection.play(queueVT[0].voiceFile,{ volume: false });
         dispatcher.on('finish', () => {
-            console.log("Done queue! queueIdx:" + (queueVT.length - 1)  + " Done voice_file:" + queueVT[0].voiceFile);
+            console.log("Done queue --> voice_file:" + queueVT[0].voiceFile);
             fs.unlinkSync(queueVT[0].voiceFile);
             queueVT.shift();
             playAudioVT();
